@@ -1,0 +1,155 @@
+#gallery{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #7335b7;
+    border-radius: 0 0 200px 0;
+
+
+}
+
+/*navbar*/
+.navvbar{
+    border-radius: 0 0 60px 0;
+    z-index: 3;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
+    background: #7335b7;
+}
+.navvbar .logo img{
+    width: 110px;
+    height: 56px;
+}
+.navvbar nav > i{
+    display: none;
+}
+.navvbar i{
+    display: none;
+}
+.navvbar ul{
+    display: inline-block;
+    list-style-type: none;
+}
+.navvbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+}
+.navvbar ul li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.navvbar ul li a:hover{
+    color: #f8842b;
+    text-shadow: 0 0 60px #f8842b;
+}
+/*header*/
+.header {
+    height: 70vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.header p {
+    color: lightblue;
+}
+.header span {
+    font-size: 80px;
+    font-weight: 700;
+    position: absolute;
+    padding: 50px;
+    padding-left: 100px;
+    color: white;
+}
+#p {
+    width: 700px;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 100px;
+    padding: 50px;
+    padding-left: 100px;
+}
+
+/*gallery*/
+.gallery {
+    padding: 0.3em;
+    column-count: 4;
+    column-gap: 0.3em;
+}
+.gallery img {
+    width: 100%;
+    margin-bottom: 0.3em;
+}
+@media(max-width: 992px){
+    .gallery {
+        column-count: 3;
+    }
+}
+@media(max-width: 768px){
+    .gallery {
+        column-count: 2;
+    }
+}
+@media(max-width: 576px){
+    .gallery {
+        column-count: 1;
+    }
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+button {
+    margin-left: 30px;
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+}
+
+#btn {
+    width: 150px;
+    font-size: 25px;
+    font-weight: 700;
+}
+#btn i {
+    margin-left: 10px;
+}
+
+.rules {
+    border: 3px solid red;
+    height: 50vh;
+}
+.gallery .item {
+    transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+    filter: brightness(70%);
+}
